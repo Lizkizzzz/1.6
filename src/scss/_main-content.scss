@@ -12,9 +12,7 @@
   &__descr {
     padding: 16px;
 
-    &--on {
-      min-height: auto;
-    }
+
 
     @media (min-width: 768px) {
       width: 312px;
@@ -30,17 +28,22 @@
     }
 
     &__excerpt {
-      max-height: 90px;
-      overflow: hidden;
 
+      overflow: hidden;
       margin-bottom: 16px;
 
       font-size: 14px;
       line-height: 18px;
       letter-spacing: 0.2px;
 
-      @media (min-width: 768px) {
-        max-height: 160px;
+
+
+      &--hidden {
+        height: 90px;
+
+        @media (min-width: 768px) {
+          height: 160px;
+        }
       }
     }
 
@@ -61,11 +64,15 @@
   }
 
   &__button {
-    font-size: 16px;
-    line-height: 24px;
-
-    letter-spacing: -0.2px;
     padding-left: 8px;
+
+    &__text {
+
+      font-size: 16px;
+      line-height: 24px;
+
+      letter-spacing: -0.2px;
+    }
   }
 
   &__svg {

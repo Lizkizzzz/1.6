@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
 
-    @media (min-width: 1120px) {
+    @media (min-width: 1440px) {
       flex-direction: row-reverse;
       justify-content: space-between;
       background-color: $background;
@@ -26,7 +26,7 @@
       padding: 18px 24px;
     }
 
-    @media (min-width: 1120px) {
+    @media (min-width: 1440px) {
       background-color: $background;
     }
    }
@@ -45,14 +45,14 @@
         margin-right: 42px;
       }
 
-      @media (min-width: 1120px) {
+      @media (min-width: 1440px) {
         display: none;
       }
     }
 
     &--menu-logo {
 
-      @media (min-width: 1120px) {
+      @media (min-width: 1440px) {
         display: none;
       }
     }
@@ -68,7 +68,7 @@
     line-height: 40px;
     letter-spacing: -0.6px;
 
-    @media (min-width: 1120px) {
+    @media (min-width: 1440px) {
       background-color: $background;
       padding: 42px 35px;
     }
@@ -84,7 +84,7 @@
       border-bottom-right-radius: 15px;
       border-top-right-radius: 15px;
 
-      @media (min-width: 1120px) {
+      @media (min-width: 1440px) {
         top: 42px;
       }
     }

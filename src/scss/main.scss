@@ -16,16 +16,5 @@
 @import "menu";
 @import "modal";
 @import "swiper";
+@import "js-styles";
 
-
-.header {
-  //text-align: center;
-  & img {
-    width: 30%;
-  }
-}
-
-.welcome-title {
-  margin-top: 50px;
-  font-size: 6em;
-}

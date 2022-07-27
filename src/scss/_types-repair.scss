@@ -7,13 +7,18 @@
     @include flex-items;
     padding: 16px 16px 52px 16px;
 
+    &--hidden {
+      @media (min-width: 768px) {
+        overflow-y: hidden;
+        height: 184px;
+      }
+    }
+
     @media (min-width: 768px) {
       @include grid-items;
       grid-template-columns: 224px 224px 224px;
       row-gap: 24px;
       column-gap: 24px;
-      overflow-y: hidden;
-      height: 184px;
       margin-bottom: 24px;
     }
 
