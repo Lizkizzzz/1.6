@@ -1,0 +1,46 @@
+@import "vars";
+.swiper {
+  height: 150px;
+  &-wrapper {
+    position: relative;
+    padding-bottom: 28px;
+    box-sizing: border-box;
+
+    @media (min-width: 768px) {
+      padding-bottom: 16px;
+    }
+  }
+
+  &-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #fff;
+  }
+
+  &-pagination {
+    //padding-top: 16px;
+    position: absolute;
+    height: 50px;
+    &-bullet {
+      width: 12px !important;
+      height: 12px !important;
+      background-color: #dddddd !important;
+      opacity: 1 !important;
+
+      &:focus {
+        outline: none;
+      }
+
+      &-active {
+        background-color: #b5b6bc;
+      }
+    }
+  }
+}
+
+span.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+}

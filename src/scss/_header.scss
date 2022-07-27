@@ -1,0 +1,93 @@
+@import "vars";
+
+.header {
+  &--box {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 1120px) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      background-color: $background;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 16px;
+
+    background-color: $header-background-color;
+    border-bottom: 1px solid $border-line-color;
+
+    @media (min-width: 768px) {
+      padding: 18px 24px;
+    }
+
+    @media (min-width: 1120px) {
+      background-color: $background;
+    }
+   }
+
+  &__nav-item {
+    display: flex;
+    align-items: center;
+
+    &--connection {
+      display: none;
+
+      @media (min-width: 768px) {
+        display: flex;
+
+        margin-left: auto;
+        margin-right: 42px;
+      }
+
+      @media (min-width: 1120px) {
+        display: none;
+      }
+    }
+
+    &--menu-logo {
+
+      @media (min-width: 1120px) {
+        display: none;
+      }
+    }
+
+  }
+
+  &__title {
+    position: relative;
+
+    padding: 24px 16px;
+
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+
+    @media (min-width: 1120px) {
+      background-color: $background;
+      padding: 42px 35px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 40px;
+      top: 24px;
+      left: 0;
+      background-color: #41F6D7;
+      border-bottom-right-radius: 15px;
+      border-top-right-radius: 15px;
+
+      @media (min-width: 1120px) {
+        top: 42px;
+      }
+    }
+  }
+
+}

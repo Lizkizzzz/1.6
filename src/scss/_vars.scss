@@ -16,10 +16,62 @@ $black: #000;
 
 
 $background: #F8F8F8;
-$footer-background: #1B1C21;
-$main-text-color: #1B1C21;
-$menu-text-color: #7E7E82 ;
-$border-color: #B8FFEC;
-$background-table-color: #616161; /* Цвет таблицы */
-$border-color: #b2dfdb; /* Цвет граней */
-$th-color: #fbc02d; /* Цвет элементов заголовка */
+$text-black-color: #1B1C21;
+$text-grey-color: #7E7E82;
+$decoration-color: #41F6D7;
+$items-border-grey-color: #EAEAEA;
+$title-background-color: #F8F8F8;
+$header-background-color: #FFFFFF;
+$border-line-color: #D9FFF5;
+$nav-border-color: #B8FFEC;
+$hover-pink: #DB7093;
+$link-pink: #FF3E79;
+
+@mixin flex-items {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin grid-items {
+  display: grid;
+}
+@mixin more-btn {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    padding-left: 32px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 24px;
+
+    letter-spacing: -0.2px;
+  }
+
+  @media (min-width: 1120px) {
+    padding-left: 39px;
+  }
+
+  &__svg {
+    margin-right: 16px;
+  }
+}
+
+@mixin footer-btn {
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.7;
+    transform: scale(1.2);
+  }
+
+  &:active {
+    filter: sepia(0.5);
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -1,3 +1,4 @@
+@import "vars";
 
 html {
   box-sizing: border-box;
@@ -14,31 +15,36 @@ html {
 }
 
 body {
+  min-width: 320px;
   overflow-anchor: none;
   margin: 0;
-  font-family: 'TT Lakes', sans-serif;
-  color: $main-text-color;
-  background-color: $background;
+  font-family: 'TTLakes', sans-serif;
+  color: $text-black-color;
+  background-color: $white;
   scroll-behavior: smooth;
+  margin: 0 auto;
 }
 
-a {
+.link {
   text-decoration: none;
   color: inherit;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+.title, .text {
   margin: 0;
   padding: 0;
 }
 
 img {
   height: auto;
-  max-width: 100%;
   object-fit: cover;
 }
 
-ul {
+form {
+  border: none;
+}
+
+.list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -67,15 +73,11 @@ textarea:focus {
   outline:none;
 }
 
-//footer {
-//  background: $footer-background;
-//}
-
 .is--hidden {
   display: none !important;
 }
 
-.btn--reset {
+.btn {
   padding: 0;
   border: none;
   background-color: transparent;
@@ -91,19 +93,18 @@ textarea:focus {
   border: 2px var(--error-red) solid !important;
 }
 
-.container {
-  max-width: 1810px;
+.main-container {
+  max-width: 1120px;
   margin: 0 auto;
-  padding-right: 20px;
-  padding-left: 20px;
 
-  @media (max-width: 1200px) {
-    padding-right: 50px;
-    padding-left: 50px;
+  @media (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1440px;
   }
+}
 
-  @media (max-width: 576px) {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
+.general {
+  max-width: 1120px;
 }

@@ -1,0 +1,53 @@
+@import "vars";
+
+.footer {
+  background-color: $background;
+
+  &--box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 57px 4px 3px 4px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 80px 24px 25px 24px;
+    }
+
+    @media (min-width: 1120px) {
+      padding: 83px 31px 21px 31px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    color: $text-grey-color;
+    margin-bottom: 16px;
+
+    @media (min-width: 768px) {
+      width: 218px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__text:first-child {
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+
+  &__text:last-child {
+    @media (min-width: 768px) {
+      text-align: right;
+    }
+
+    @media (min-width: 1120px) {
+      width: 330px;
+    }
+  }
+
+}

@@ -1,0 +1,239 @@
+@import "vars";
+
+.prices {
+  overflow-x: hidden;
+
+  &__list {
+    display: flex;
+
+    margin: 16px 0 44px 8px;
+
+
+    @media (min-width: 768px) {
+      flex-direction: column;
+      margin: 24px;
+
+      border-radius: 6px;
+    }
+
+    @media (min-width: 1120px) {
+      margin: 23px 32px 32px 32px;
+    }
+  }
+
+  &__item {
+    &--header {
+      display: none;
+
+      @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        margin-left: 24px;
+        padding: 23px 16px 0 16px;
+
+        background-color: $background;
+      }
+
+      @media (min-width: 1120px) {
+        margin-left: 32px;
+        padding: 23px 24px 0 24px;
+      }
+    }
+  }
+
+  &__list-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+
+
+    min-width: 260px;
+    min-height: 200px;
+    padding: 16px;
+
+    background-color: $white;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      min-height: 64px;
+      padding: 23px 16px;
+    }
+
+    @media (min-width: 1120px) {
+      padding: 23px 24px;
+    }
+
+
+
+
+    &__text {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 4px;
+
+      &--header {
+
+        font-size: 14px;
+        line-height: 16px;
+        color: $text-grey-color;
+      }
+
+      &--service {
+        @media (min-width: 768px) {
+          margin-right: auto;
+        }
+      }
+
+      &--header-time {
+        @media (min-width: 768px) {
+          margin-right: 225px;
+        }
+
+        @media (min-width: 1120px) {
+          margin-right: 332px;
+        }
+      }
+
+      &--half-time {
+        @media (min-width: 768px) {
+          margin-right: 186px;
+        }
+
+        @media (min-width: 1120px) {
+          margin-right: 285px;
+        }
+      }
+
+      &--time {
+        @media (min-width: 768px) {
+          margin-right: 155px;
+        }
+
+        @media (min-width: 1120px) {
+          margin-right: 254px;
+        }
+      }
+
+      &--header-price {
+        @media (min-width: 768px) {
+          margin-right: 61px;
+        }
+
+        @media (min-width: 1120px) {
+          margin-right: 192px;
+        }
+      }
+
+      &--free {
+        @media (min-width: 768px) {
+          margin-right: 22px;
+        }
+
+        @media (min-width: 1120px) {
+          margin-right: 153px;
+        }
+      }
+
+      &--price {
+        @media (min-width: 768px) {
+          margin-right: 44px;
+        }
+
+        @media (min-width: 1120px) {
+          margin-right: 175px;
+        }
+      }
+    }
+
+    &__text--mobil {
+      font-size: 14px;
+      line-height: 16px;
+      color: $text-grey-color;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    &__text:nth-child(2),
+    &__text:nth-child(4){
+      margin-bottom: 16px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__list-item:not(:last-child) {
+    margin-right: 16px;
+
+    @media (min-width: 768px) {
+      margin: 0;
+      border-bottom: 1px solid $items-border-grey-color;
+
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+
+    @media (min-width: 1120px) {
+      right: 24px;
+    }
+  }
+
+  &__description {
+    width: 288px;
+    padding: 0 16px 16px 16px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+
+    @media (min-width: 768px) {
+      padding: 0 24px 16px 24px;
+      min-width: 469px;
+    }
+
+    @media (min-width: 1120px) {
+      padding-left: 32px;
+      min-width: 477px;
+    }
+  }
+
+  &__description-btn {
+    text-align: justify;
+    padding-left: 16px;
+    width: 202px;
+
+    @media (min-width: 768px) {
+      white-space: nowrap;
+      width: 300px;
+      padding-left: 24px;
+    }
+
+    @media (min-width: 1120px) {
+      padding-left: 32px;
+    }
+
+    &__text {
+      margin-right: 4px;
+
+      text-align: left;
+      font-size: 16px;
+      line-height: 24px;
+
+      letter-spacing: -0.2px;
+    }
+
+    &__svg {
+      height: 11.45px;
+      width: 6px;
+
+    }
+  }
+}

@@ -1,0 +1,121 @@
+@import "vars";
+
+.nav-item {
+  &__button {
+    min-width: 40px;
+    height: 40px;
+
+    background-color: inherit;
+  }
+
+  &__text {
+    display: none;
+    margin-right: 8px;
+
+    @media (min-width: 1120px) {
+      display: block;
+    }
+  }
+
+  &__menu {
+    margin-right: 16px;
+
+    @media (min-width: 768px) {
+      margin-right: 42px;
+    }
+  }
+
+  &__application {
+    display: flex;
+    align-items: center;
+
+    margin-right: 16px;
+
+    @media (min-width: 1120px) {
+      white-space: nowrap;
+    }
+  }
+
+  &__repair-status {
+    display: flex;
+    align-items: center;
+
+    @media (min-width: 1120px) {
+      white-space: nowrap;
+    }
+  }
+
+  &__logo {
+    position: relative;
+    width: 98px;
+    height: 52px;
+  }
+
+  &__phone {
+    margin-right: 16px;
+  }
+
+  &__chat {
+    margin-right: 16px;
+  }
+
+  &__logo::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 32px;
+    top: 10px;
+    left: -20px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    visibility: hidden;
+
+    @media (min-width: 768px) {
+      visibility: visible;
+    }
+
+    @media (min-width: 1120px) {
+      visibility: hidden;
+    }
+  }
+
+  &__logo::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 32px;
+    top: 10px;
+    right: -17px;
+    border-radius: 15px;
+    background-color: #F2F2F2;
+
+    @media (min-width: 768px) {
+      visibility: hidden;
+    }
+  }
+
+  &__profile {
+    position: relative;
+  }
+
+  &__profile::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 32px;
+    top: 4px;
+    right: -20px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    visibility: hidden;
+
+    @media (min-width: 768px) {
+      visibility: visible;
+    }
+
+    @media (min-width: 1120px) {
+      visibility: hidden;
+    }
+  }
+
+}
