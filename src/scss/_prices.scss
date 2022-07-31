@@ -59,6 +59,7 @@
       flex-direction: row;
       min-height: 64px;
       padding: 23px 16px;
+      border-bottom: 1px solid $items-border-grey-color;
     }
 
     @media (min-width: 1120px) {
@@ -167,13 +168,12 @@
     }
   }
 
-  &__list-item:not(:last-child) {
-    margin-right: 16px;
+
+
+  &__list-item:last-child {
 
     @media (min-width: 768px) {
       margin: 0;
-      border-bottom: 1px solid $items-border-grey-color;
-
     }
   }
 

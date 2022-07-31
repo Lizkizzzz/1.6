@@ -31,8 +31,8 @@
     }
   }
 
-  &__item:not(:last-child) {
-    margin-right: 16px;
+  &__item:last-child {
+    margin-right: 90px;
 
     @media (min-width: 768px) {
       margin: 0;
